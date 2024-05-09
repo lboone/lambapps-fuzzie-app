@@ -3,8 +3,10 @@ import Image from "next/image";
 import {ContainerScroll} from "@/components/global/container-sroll-animation";
 import {InfiniteMovingCards} from "@/components/global/infinite-moving-cards";
 import { HeroParallax } from '@/components/global/connect-parallax'
+import { LampComponent } from '@/components/global/lamp'
 import { Button } from '@/components/ui/button'
 import { clients, products } from '@/lib/constant'
+
 
 export default function Home() {
   return (
@@ -40,6 +42,9 @@ export default function Home() {
       />
       <section>
         <HeroParallax products={products}></HeroParallax>
+      </section>
+      <section className="mt-[-500px]">
+        <LampComponent />
       </section>
     </main>
   )
